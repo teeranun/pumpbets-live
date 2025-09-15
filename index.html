@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pumpbets.live - Real-Time Prediction Markets Inside Streams</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Debug: Ensure basic styling works */
+        body { 
+            background: #0f0f0f !important; 
+            color: #ffffff !important; 
+            font-family: 'Inter', Arial, sans-serif !important;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-dice"></i>
+                <span>pumpbets.live</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#coming-soon" class="nav-link">Statistics</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Revolutionizing Live Prediction Markets</span>
+                </div>
+                <h1 class="hero-title">
+                    Real-Time Prediction Markets
+                    <span class="gradient-text">Inside Streams</span>
+                </h1>
+                <p class="hero-description">
+                    Viewers create custom prediction markets during live streams, wagering meme tokens 
+                    against each other on real-time outcomes. Transform every stream into a decentralized 
+                    prediction market where the community decides what's worth betting on.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="document.querySelector('#features').scrollIntoView({behavior: 'smooth', block: 'start'})">
+                        <i class="fas fa-star"></i>
+                        Features
+                    </button>
+                    <button class="btn-secondary" onclick="window.open('https://x.com/pumpbetslive', '_blank')">
+                        <i class="fab fa-twitter"></i>
+                        Follow Us
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="stream-preview">
+                    <div class="stream-header">
+                        <div class="streamer-info">
+                            <div class="avatar">
+                                <img src="trippypepe.png" alt="Streamer Avatar" class="avatar-img">
+                            </div>
+                            <div class="streamer-details">
+                                <span class="streamer-name">Pump.fun Streamer</span>
+                                <span class="viewer-count">1.2K viewers</span>
+                                <span class="total-pot">Total Pot: $0</span>
+                            </div>
+                        </div>
+                        <div class="live-indicator">
+                            <span class="live-dot"></span>
+                            <span>LIVE</span>
+                        </div>
+                    </div>
+                    <div class="betting-panel">
+                        <div class="bet-title">Will I beat this boss in 5 minutes?</div>
+                        <div class="bet-options">
+                            <div class="bet-option yes">
+                                <span class="option-text">YES</span>
+                                <span class="odds">2.4x</span>
+                                <span class="stake">$1,250</span>
+                            </div>
+                            <div class="bet-option no">
+                                <span class="option-text">NO</span>
+                                <span class="odds">1.8x</span>
+                                <span class="stake">$890</span>
+                            </div>
+                        </div>
+                        <div class="bet-timer">
+                            <i class="fas fa-clock"></i>
+                            <span>4:32 remaining</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Features</h2>
+                <p>Everything viewers need to create and participate in live prediction markets</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Create Custom Prediction Markets</h3>
+                    <p>Viewers create live prediction markets with customizable outcomes, duration, and stakeable tokens through an intuitive interface.</p>
+                    <div class="feature-examples">
+                        <span class="example-tag">"Will streamer beat this boss in 5 minutes?"</span>
+                        <span class="example-tag">"Will $TOKEN hit top 10?"</span>
+                        <span class="example-tag">"Will chat make streamer laugh?"</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Peer-to-Peer Wagering</h3>
+                    <p>Viewers bet against each other with connected wallets. Odds update in real-time based on community staked weight with optional multipliers.</p>
+                    <div class="feature-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Real-time odds</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-bolt"></i>
+                            <span>Boosted multipliers</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile friendly</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure wallets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Community Resolution & Payouts</h3>
+                    <p>Auto-resolved for on-chain metrics or community-voted resolution for gameplay. Winners get instant payouts from the community pool.</p>
+                    <div class="feature-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>Community resolution</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-coins"></i>
+                            <span>Instant payouts</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>Time-based markets</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-percentage"></i>
+                            <span>Low fees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to create engaging prediction markets</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Viewers Create Bets</h3>
+                        <p>Set up custom betting markets with outcomes, duration, and stakeable tokens through a simple interface.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="creation-panel">
+                            <div class="panel-header">Create New Bet</div>
+                            <div class="panel-field">
+                                <label>Question</label>
+                                <input type="text" placeholder="Will I beat this boss?" readonly>
+                            </div>
+                            <div class="panel-field">
+                                <label>Duration</label>
+                                <select readonly>
+                                    <option>1 minute</option>
+                                    <option>5 minutes</option>
+                                    <option>10 minutes</option>
+                                    <option>30 minutes</option>
+                                    <option>1 hour</option>
+                                    <option>2 hours</option>
+                                    <option>End of stream</option>
+                                </select>
+                            </div>
+                            <div class="panel-field">
+                                <label>Token</label>
+                                <select readonly>
+                                    <option>$TOKEN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Viewers Place Bets</h3>
+                        <p>Audience connects wallets and wagers on outcomes. Odds update dynamically based on betting volume.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="betting-interface">
+                            <div class="bet-question">Will I beat this boss in 5 minutes?</div>
+                            <div class="bet-options">
+                                <div class="bet-option">
+                                    <div class="option-header">
+                                        <span>YES</span>
+                                        <span class="odds">1.5x</span>
+                                    </div>
+                                    <button class="bet-btn">Bet 100 $TOKEN</button>
+                                </div>
+                                <div class="bet-option">
+                                    <div class="option-header">
+                                        <span>NO</span>
+                                        <span class="odds">0.5x</span>
+                                    </div>
+                                    <button class="bet-btn">Bet 100 $TOKEN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Auto Resolution</h3>
+                        <p>Bets are automatically resolved based on on-chain data or manual input. Winners receive instant payouts.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="resolution-panel">
+                            <div class="resolution-status">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Bet Resolved</span>
+                            </div>
+                            <div class="payout-info">
+                                <div class="winner">YES wins!</div>
+                                <div class="payout">Payout: $120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth & Impact Section -->
+    <section id="coming-soon" class="coming-soon">
+        <div class="container">
+            <div class="growth-content">
+                <div class="growth-header">
+                    <h2>The Potential of Prediction Markets in Streaming</h2>
+                    <p>While pump.fun's streaming feature was suspended in late 2024, the platform's 4.5M+ monthly users and 10+ minute average sessions show massive potential for prediction markets to revolutionize live streaming engagement.</p>
+                </div>
+                
+                <div class="growth-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4.5M+</div>
+                        <div class="stat-label">Monthly active users on pump.fun</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+ min</div>
+                        <div class="stat-label">Average session duration</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$2.1B+</div>
+                        <div class="stat-label">Total volume traded (2024)</div>
+                    </div>
+                </div>
+
+                <div class="growth-visualization">
+                    <div class="chart-container">
+                        <div class="chart-title">Prediction Market Potential in Live Streaming</div>
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 15%;" data-value="Traditional Streaming"></div>
+                            <div class="bar" style="height: 25%;" data-value="Gaming Streams"></div>
+                            <div class="bar" style="height: 40%;" data-value="Crypto Trading"></div>
+                            <div class="bar" style="height: 60%;" data-value="Meme Token Launches"></div>
+                            <div class="bar" style="height: 100%;" data-value="With Prediction Markets"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Traditional Streaming</span>
+                            <span>Gaming Streams</span>
+                            <span>Crypto Trading</span>
+                            <span>Meme Token Launches</span>
+                            <span>With Prediction Markets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prediction-impact">
+                    <h3>The Future of Interactive Streaming</h3>
+                    <div class="impact-grid">
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Massive Engagement Potential</h4>
+                            <p>With 4.5M+ monthly users and 10+ minute sessions, prediction markets could transform passive viewing into active participation across the entire pump.fun ecosystem.</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community-Driven Markets</h4>
+                            <p>Viewers create their own prediction markets, turning every stream into a decentralized betting experience where the community decides what's worth wagering on.</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h4>New Revenue Streams</h4>
+                            <p>Prediction markets could unlock billions in additional trading volume, creating new monetization opportunities for streamers and platforms.</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>Gamified Streaming</h4>
+                            <p>Transform every token launch, gaming session, and community event into an interactive prediction market where viewers have real skin in the game.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coming-soon-cta">
+                    <button class="btn-secondary" onclick="window.open('https://x.com/pumpbetslive', '_blank')">
+                        <i class="fab fa-twitter"></i>
+                        Follow Updates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-dice"></i>
+                    <span>pumpbets.live</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://x.com/pumpbetslive" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 pumpbets.live. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
